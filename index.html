@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>World-Weather-Forecast</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper-app">
+        <div id="box-color"></div>
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city..."
+                  autofocus="on"
+                  autocomplete="off"
+                  class="form-control"
+                  id="city-input" />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="search"
+                  class="btn btn-primary shadow sm w-100"
+                  id="searchCityButton" />
+              </div>
+            </div>
+          </form>
+          <div class="app-overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last updated on:<span id="date">Thursday 10:35</span></li>
+              <li id="description"></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img
+                  src="http://openweathermap.org/img/wn/02d@2x.png"
+                  alt="broken clouds"
+                  id="icon"
+                  class="float-left" />
+                <div class="float-left">
+                  <strong id="temperature">24</strong>
+                  <span class="units"
+                    ><a href="#" class="active" id="celsius-link">°C </a>|<a
+                      href="#"
+                      id="fahrenheit-link"
+                      class="">
+                      °F
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Real Feel: <span id="feel"></span> ℃</li>
+                <li>Humidity: <span id="humidity"></span> %</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
+          </div>
+        
+        </div>
+        <small>
+          <a
+            href="https://github.com/EkateriniTri/Weather.App.Project"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Katerina Tri
+        </small>
+      </div>
+    </div>
+  </div>
+   <script src="src/app.js"></script>
+  </body>
+</html>
