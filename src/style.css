@@ -1,13 +1,13 @@
 body {
   font-family: arial, sans-serif;
-  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  background: #f9f7fe;
 }
 
 h1 {
-  color: #878787;
-  font-weight: 100;
-  font-size: 24px;
-  line-height: 28px;
+  color: #272142;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 48px;
   margin-bottom: 0;
 }
 
@@ -31,19 +31,20 @@ li:first-letter {
 }
 
 .wrapper-app {
-  max-width: 600px;
+  max-width: 800px;
   margin: 30px auto;
   background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 30px 50px rgba(65, 50, 100, 0.08);
 }
 
 .weather-app {
   padding: 20px;
-  border: none;
+  border: 1px solid #dadde1;
   border-radius: 5px;
 }
-
 .app-overview {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .weather-temperature img {
@@ -79,18 +80,21 @@ li:first-letter {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
+  color: black;
 }
 
 .weather-forecast-date {
   font-size: 17px;
-  color: black;
+  text-align: center;
 }
 
-.weather-forecast-temperatures-min {
-  opacity: 0.5px;
-  color: rgb(135, 135, 135);
+.weather-forecast-temperatures .weather-forecast-temperature-min {
+  opacity: 0.6;
 }
 
 .weather-forecast-temperatures {
-  font-size: 15px;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.5;
+  font-weight: bold;
 }
